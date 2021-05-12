@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+    head
+        title Title
+        // Required meta tags
+        meta(charset='utf-8')
+        |     
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        // Bootstrap CSS
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+    body
+        .container
+            .row
+                .col-12
+                    hr
+                |             
+                .col-8.mx-auto
+                    form(action='/addData' method='post')
+                        .form-group
+                            label(for='product_name') T&ecirc;n S&#x1EA3;n Ph&#x1EA9;m
+                            |                         
+                            input#product_name.form-control(type='text' name='product_name' aria-describedby='name_text' placeholder='Nhập Tên Sản Phẩm')
+                            |                         
+                            small#name_text.form-text.text-muted Nh&#x1EAD;p t&ecirc;n s&#x1EA3;n ph&#x1EA9;m v&agrave;o &dstrok;&acirc;y
+                        |                     
+                        .form-group
+                            label(for='product_price') Gi&aacute; S&#x1EA3;n Ph&#x1EA9;m
+                            |                         
+                            input#product_price.form-control(type='text' name='product_price' aria-describedby='price_text' placeholder='Nhập Giá Sản Phẩm')
+                            |                         
+                            small#price_text.form-text.text-muted Nh&#x1EAD;p gi&aacute; s&#x1EA3;n ph&#x1EA9;m v&agrave;o &dstrok;&acirc;y
+                        |                     
+                        .form-group
+                            label(for='product_image') &Dstrok;&#x1B0;&#x1EDD;ng Link &#x1EA2;nh
+                            |                         
+                            input#product_image.form-control(type='text' name='product_image' aria-describedby='image_text' placeholder='Nhập Đường Link Ảnh')
+                            |                         
+                            small#image_text.form-text.text-muted Nh&#x1EAD;p &dstrok;&#x1B0;&#x1EDD;ng link &#x1EA3;nh v&agrave;o &dstrok;&acirc;y
+                        |                     
+                        button.btn.btn-info(type='submit') Th&ecirc;m M&#x1EDB;i
+            // Optional JavaScript
+            // jQuery first, then Popper.js, then Bootstrap JS
+            script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+            |         
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+            |         
+            script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
